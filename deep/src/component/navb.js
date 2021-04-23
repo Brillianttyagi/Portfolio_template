@@ -5,7 +5,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar, Nav } from 'react-bootstrap'
 import Logo from './images/logo.png'
 
-class Navb extends Component { 
+class Navb extends Component {
+
     render() { 
         return (
             <Navbar className="Navbar" bg="light" expand="lg">
