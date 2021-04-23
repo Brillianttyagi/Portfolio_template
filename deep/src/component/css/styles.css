@@ -36,7 +36,7 @@ body{
 #change{
     width: fit-content;
     animation: typing 0.7s infinite ease;
-    color: rgb(14, 14, 19);
+    color: rgb(255, 0, 0);
 }
 .Hii{
     font-size: 25px;

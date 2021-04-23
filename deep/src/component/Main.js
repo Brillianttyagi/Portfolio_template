@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Container,Row,Col } from 'react-bootstrap'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Work from './images/work.svg'
 import Circle from './images/circle.svg'
 import './css/styles.css'
@@ -40,7 +41,6 @@ class Main extends Component {
                     </Col>
                     <Col><img width="500px" src={ Work } alt="Programming guy"/></Col>
                 </Row>
-                <img id="Circle2" src={ Circle } alt="circle"/>
             </Container>
          );
     }
