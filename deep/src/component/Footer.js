@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 import { Container,Row,Col } from 'react-bootstrap'
 import './css/Footer.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faFacebook,faGooglePlus,faTwitter,faYoutube,faLinkedin } from "@fortawesome/free-brands-svg-icons"
 
 class Foot extends Component {
     render() { 
@@ -27,19 +28,19 @@ class Foot extends Component {
                             <address>
                                 Uttar pradesh<br/>
                                 India<br/>
-                                <i class="fa fa-envelope fa-lg"></i>
+                                <FontAwesomeIcon icon={faEnvelope} />
                                 <a href="mailto:deepanshubhai84@gmail.com">Mail Me</a>
                             </address>
                         </div>
                     </Col>
                     <Col>
                         <div>
-                            <a id="social_" class="btn btn-social-icon btn-google-plus" href="http://google.com/+"><i class="fa fa-google-plus"></i></a>
-                            <a id="social_" class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook"></i></a>
-                            <a id="social_" class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a>
-                            <a id="social_" class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
-                            <a id="social_" class="btn btn-social-icon btn-youtube" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
-                            <a id="social_" class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o"></i></a>
+                            <a id="social_" class="btn btn-social-icon btn-google-plus" href="http://google.com/+"><FontAwesomeIcon icon={faGooglePlus} size="2x" /></a>
+                            <a id="social_" class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><FontAwesomeIcon icon={faFacebook} size="2x" /></a>
+                            <a id="social_" class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><FontAwesomeIcon icon={faLinkedin} size="2x" /></a>
+                            <a id="social_" class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><FontAwesomeIcon icon={faTwitter} size="2x" /></a>
+                            <a id="social_" class="btn btn-social-icon btn-youtube" href="http://youtube.com/"><FontAwesomeIcon icon={faYoutube} size="2x" /></a>
+                            <a id="social_" class="btn btn-social-icon" href="mailto:"><FontAwesomeIcon icon={faEnvelope} size="2x" /></a>
                         </div>
                     </Col>
                 </Row>
