@@ -9,7 +9,7 @@ class Navb extends Component {
 
     render() { 
         return (
-            <Navbar className="Navbar" bg="light" expand="lg">
+            <Navbar className="Navbar" bg="light" expand="lg" sticky="top">
                 <Navbar.Brand href="#home"><img width="50px" src={ Logo } alt="brand"/></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">

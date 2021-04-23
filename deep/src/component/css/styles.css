@@ -1,6 +1,7 @@
 body{
     padding:0px 0px 0px 0px;
     z-index:0;
+    overflow-x: hidden;
 }
 .navbar-dark {
     background-color: #ffffff;
@@ -54,8 +55,6 @@ body{
 #Circle2{
     float: right;
     margin-right: -300px;
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
 }
 .content{
     margin: 50px;

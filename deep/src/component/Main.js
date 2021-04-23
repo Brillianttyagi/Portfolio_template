@@ -16,14 +16,14 @@ class Main extends Component {
     }
     componentDidMount(){
         setInterval(() => {
-            if(this.state.count == this.state.text.length){
+            if(this.state.count === this.state.text.length){
                 this.setState({count:0})
             }
             this.setState({currenttext:this.state.text[this.state.count]})
             this.setState({letter:this.state.currenttext.slice(0,++this.state.index)})
             if (this.state.letter.length===this.state.currenttext.length){
-                this.state.count++
-                this.state.index=0
+                this.setState({count:this.state.count++,index:0})
+                
             }
         }, 400);
     }
@@ -33,14 +33,14 @@ class Main extends Component {
                 <Col><img id="Circle" src={ Circle } alt="circle"/></Col>
                 <Row>
                     <Col className="content">
-                        <Row><h1 className="Hii">Hii <img height="80px" src="https://raw.githubusercontent.com/Brillianttyagi/Brillianttyagi/master/hand.gif"/> <br/></h1></Row>          
+                        <Row><h1 className="Hii">Hii <img height="80px" alt="Hand" src="https://raw.githubusercontent.com/Brillianttyagi/Brillianttyagi/master/hand.gif"/> <br/></h1></Row>          
                         <Row><p className="name">I'm Deepanshu</p></Row>
                         <Row><h5>I'm a <span id="change">{ this.state.letter }</span></h5></Row>
 
                     </Col>
                     <Col><img width="500px" src={ Work } alt="Programming guy"/></Col>
                 </Row>
-                <Col><img id="Circle2" src={ Circle } alt="circle"/></Col>
+                <img id="Circle2" src={ Circle } alt="circle"/>
             </Container>
          );
     }
