@@ -22,3 +22,6 @@
 #links:hover{
     color: red;
 }
+.navlink:hover{
+    text-decoration: none;
+}

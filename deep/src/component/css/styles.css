@@ -56,6 +56,13 @@ body{
     float: right;
     margin-right: -300px;
 }
+.navlinkh:hover{
+    text-decoration: none;
+}
+.navlinkh{
+    text-decoration: none;
+    margin: 9px;
+}
 .Programming{
     width: 100%;
 }

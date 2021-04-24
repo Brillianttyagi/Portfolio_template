@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
 import { Container,Row,Col } from 'react-bootstrap'
 import './css/Footer.css'
+import {
+    Link
+  } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faLink } from '@fortawesome/free-solid-svg-icons'
 import { faGithub,faCodiepie,faTwitter,faLinkedin, faInstagram } from "@fortawesome/free-brands-svg-icons"
@@ -14,11 +17,11 @@ class Foot extends Component {
                         <div class="col-5 offset-1 col-sm-2">
                             <h5>Links</h5>
                             <ul class="list-unstyled">
-                                <li><a id="links" href="/">Home</a></li>
-                                <li><a id="links" href="./project">Projects</a></li>
+                                <li><Link className="navlink" to="/">Home</Link></li>
+                                <li><Link className="navlink" to="/project">Project</Link></li>
                                 <li><a id="links" href="#">Resume</a></li>
-                                <li><a id="links" href="./contact">Contact</a></li>
-                                <li><a id="links" href="./about">About</a></li>
+                                <li><Link className="navlink" to="/Contact">Contact</Link></li>
+                                <li><Link className="navlink" to="/About">About</Link></li>
                             </ul>
                         </div>
                     </Col>

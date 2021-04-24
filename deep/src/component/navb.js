@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 import './css/styles.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import {
+    Link
+  } from "react-router-dom";
 import { Navbar, Nav } from 'react-bootstrap'
 import Logo from './images/logo.png'
 
@@ -14,11 +16,11 @@ class Navb extends Component {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ml-auto">
-                    <Nav.Link href="/">Home</Nav.Link>
-                    <Nav.Link href="/project">Project</Nav.Link>
-                    <Nav.Link href="#link">Resume</Nav.Link>
-                    <Nav.Link href="/contact">Contact Me</Nav.Link>
-                    <Nav.Link href="/about">About Me</Nav.Link>
+                    <Link className="navlinkh" to="/">Home</Link>
+                    <Link className="navlinkh" to="/project">Project</Link>
+                    <Link className="navlinkh" to="/">Resume</Link>
+                    <Link className="navlinkh" to="/Contact">Contact Me</Link>
+                    <Link className="navlinkh" to="/About">About Me</Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>

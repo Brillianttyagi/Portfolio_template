@@ -15,7 +15,7 @@ import About from './component/About';
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Navb/>
         <Switch>
           <Route path="/contact">
