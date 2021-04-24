@@ -56,6 +56,9 @@ body{
     float: right;
     margin-right: -300px;
 }
+.Programming{
+    width: 100%;
+}
 .content{
     margin: 50px;
 }
