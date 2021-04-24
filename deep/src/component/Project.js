@@ -1,16 +1,20 @@
 import React, { Component } from 'react'
-import { Container,Row,Col,Card } from 'react-bootstrap'
+import { Container,Row,Card } from 'react-bootstrap'
 import blog from './images/Animation.gif'
 import Calculator from './images/Calculator.gif'
 import speed from './images/speed.gif'
 import todo from './images/todo.gif'
 import lr from './images/lr.gif'
 import mp from './images/mp.gif'
+import np from './images/notepad.gif'
+import cal from './images/cal.gif'
+import c19 from './images/c19.png'
 class Project extends Component {
     state = {  }
     render() { 
         return ( 
             <Container>
+                <h1 className="projects">Projects</h1>
                 <Row>
                     <Card className="m-3">
                         <div>
@@ -30,13 +34,13 @@ class Project extends Component {
                     <Card className="m-3">
                         <div>
                             <Card style={{ width: '18rem' }}>
-                                <Card.Img variant="top" src={ blog } />
+                                <Card.Img variant="top" height="125px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJcook5YKIzQE_N889HVHaeS7UR9hWT1JgQw&usqp=CAU" />
                                 <Card.Body>
                                     <Card.Title>AIPOC</Card.Title>
                                     <Card.Text>
                                         An intelligent piece of code,Artificial assistant<br/>It is created By Iot python and ML.
                                     </Card.Text>
-                                    <Card.Link href="https://github.com/Brillianttyagi/BLOG">Source Code</Card.Link>
+                                    <Card.Link href="https://github.com/aipoc-ai">Source Code</Card.Link>
                                     <Card.Link href="http://deepprogrammer.pythonanywhere.com/">Live Demo</Card.Link>
                                 </Card.Body>
                             </Card>
@@ -52,6 +56,21 @@ class Project extends Component {
                                         An Linear regression model to prediction.<br/>It is created By jupiter Notebook.
                                     </Card.Text>
                                     <Card.Link href="https://github.com/Brillianttyagi/BLOG">Source Code</Card.Link>
+                                    <Card.Link href="http://deepprogrammer.pythonanywhere.com/">Live Demo</Card.Link>
+                                </Card.Body>
+                            </Card>
+                        </div>
+                    </Card>
+                    <Card className="m-3">
+                        <div>
+                            <Card style={{ width: '18rem' }}>
+                                <Card.Img variant="top" src={ c19 } />
+                                <Card.Body>
+                                    <Card.Title>Covid19 Tracker</Card.Title>
+                                    <Card.Text>
+                                        Track list of case of corona virus in india<br/>It is created By Django.
+                                    </Card.Text>
+                                    <Card.Link href="https://github.com/Brillianttyagi/Covid19-tracker">Source Code</Card.Link>
                                     <Card.Link href="http://deepprogrammer.pythonanywhere.com/">Live Demo</Card.Link>
                                 </Card.Body>
                             </Card>
@@ -78,13 +97,13 @@ class Project extends Component {
                     <Card className="m-3">
                         <div>
                             <Card style={{ width: '18rem' }}>
-                                <Card.Img variant="top" src={ blog } />
+                                <Card.Img variant="top" src={ np } />
                                 <Card.Body>
                                     <Card.Title>Notepad</Card.Title>
                                     <Card.Text>
                                         Notepad for writing and editing files.<br/>It is created By Python and Tkinter.
                                     </Card.Text>
-                                    <Card.Link href="https://github.com/Brillianttyagi/Music-player">Source Code</Card.Link>
+                                    <Card.Link href="https://github.com/Brillianttyagi/notepad">Source Code</Card.Link>
                                 </Card.Body>
                             </Card>
                         </div>
@@ -93,13 +112,13 @@ class Project extends Component {
                     <Card className="m-3">
                         <div>
                             <Card style={{ width: '18rem' }}>
-                                <Card.Img variant="top" src={ blog } />
+                                <Card.Img variant="top" src={ cal } />
                                 <Card.Body>
                                     <Card.Title>Calculator</Card.Title>
                                     <Card.Text>
                                         Calculator for Mathmatical calculations<br/>It is created By Python and Tkinter.
                                     </Card.Text>
-                                    <Card.Link href="https://github.com/Brillianttyagi/Music-player">Source Code</Card.Link>
+                                    <Card.Link href="https://github.com/Brillianttyagi/calculator">Source Code</Card.Link>
                                 </Card.Body>
                             </Card>
                         </div>

@@ -39,7 +39,7 @@ class Main extends Component {
                         <Row><h5>I'm a <span id="change">{ this.state.letter }</span></h5></Row>
 
                     </Col>
-                    <Col><img width="500px" src={ Work } alt="Programming guy"/></Col>
+                    <Col><img className="Programming" src={ Work } alt="Programming guy"/></Col>
                 </Row>
             </Container>
          );
