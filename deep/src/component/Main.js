@@ -8,7 +8,7 @@ class Main extends Component {
     constructor(props){
         super(props);
         this.state = {
-            text:['Pythonista','Developer.','Coder.','Data scientist.'],
+            text:['Pythonista','Developer','Coder.','Student'],
             count:0,
             index:0,
             currenttext:"",
@@ -23,7 +23,7 @@ class Main extends Component {
             this.setState({currenttext:this.state.text[this.state.count]})
             this.setState({letter:this.state.currenttext.slice(0,++this.state.index)})
             if (this.state.letter.length===this.state.currenttext.length){
-                this.setState({count:this.state.count++,index:0})
+                this.setState({count:this.state.count+1,index:0})
                 
             }
         }, 400);
